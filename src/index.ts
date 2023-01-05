@@ -84,3 +84,68 @@ enum CardinalDirections1 {
     South = 'South',
     West = "West"
 }
+//TODO:- Vince.. Revisit Type aliases in typescript
+/**
+ * Bugger!!
+ * Seems if I give any cent about interfaces, I have to take on aliases
+ */
+// So we can define an alias from both primitives and complex types 
+type CarMileage = number
+type CarModel = string
+type CarBrand = string
+
+//Alias for an object(complex type)
+type Car = {
+    mileage: CarMileage,
+    brand: CarBrand,
+    model: CarModel
+}
+
+const carMileage: CarMileage = 76544
+const carBrand: CarBrand = "Mitsubishi"
+const carModel: CarModel = "Mirage"
+
+const myCar: Car = {
+    mileage: carMileage,
+    brand: carBrand,
+    model: carModel
+}
+/**
+ * Interfaces
+ * The good stuff
+ * They apply exclusively to object types.
+ */
+interface Rectangle {
+    height:number,
+    width: number
+}
+//Now we can make as many objects of the rectangle as we wish.
+const rect: Rectangle = {
+    height:345,
+    width:78
+
+}
+const rect1: Rectangle = {
+    height: 56,
+    width:79
+}
+/**
+ * EXTENDING INTERFACES
+ * The gooder stuff(:))
+ */
+//we can have a rectangle that exends the current rectangle interface
+
+interface ColoredRectangle extends Rectangle{
+    color: string
+}
+const color_rect: ColoredRectangle = {
+    height: 34,
+    width: 54,
+    color: "Red"
+}
+/**
+ * UNIONS
+ * TYPESCRIPT UNION TYPES
+ */
+//Union types are used when a value can be more than a single type.
+//That would be when a value can be a string or a number

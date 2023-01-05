@@ -43,4 +43,25 @@ var CardinalDirections1;
     CardinalDirections1["South"] = "South";
     CardinalDirections1["West"] = "West";
 })(CardinalDirections1 || (CardinalDirections1 = {}));
+const carMileage = 76544;
+const carBrand = "Mitsubishi";
+const carModel = "Mirage";
+const myCar = {
+    mileage: carMileage,
+    brand: carBrand,
+    model: carModel
+};
+const rect = {
+    height: 345,
+    width: 78
+};
+const rect1 = {
+    height: 56,
+    width: 79
+};
+const color_rect = {
+    height: 34,
+    width: 54,
+    color: "Red"
+};
 //# sourceMappingURL=index.js.map
