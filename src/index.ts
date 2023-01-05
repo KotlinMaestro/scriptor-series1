@@ -23,3 +23,21 @@ let names:string[] = ["Vince", "John", "Jennifer", "Michelangelo"]
 
 /*TS also offers autocompletion of all the possible actions you can perform on data*/
 console.log(names.forEach( n =>n.endsWith("e")))
+
+/*Typescript Tuples*/
+//Tuples are typed arrays with a predefined length and types for each index
+let myTuple: [number, boolean, string]
+myTuple = [5, true, 'Johny']
+//tuple with a number and string on index 0 and 1 respectively
+let user: [number, string] = [3, 'Vince']
+//the order of initialization matters when initializing a tuple.
+
+/*Read Only Tuple*/
+//Tuples should be read only to prevent type insecurity for the n+ indices during a push
+
+const readOnlyTuple: readonly[number, boolean, string] = [56, true, "I am Vincent"]
+//the above tuple is safe from mutation and the push function.
+
+/* React.js used a tuple for state handling ie const [firstName, setFirstName] = useState(firstName)
+=> From the above structure, we know that our list will have a string at the first index and
+a function as the second value*/

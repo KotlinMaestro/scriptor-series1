@@ -9,4 +9,5 @@ let numbers = [1, 4, 6, "string"];
 let numbers2 = [23, 45, 21, 56];
 let names = ["Vince", "John", "Jennifer", "Michelangelo"];
 console.log(names.forEach(n => n.endsWith("e")));
+let user = [3, 'Vince'];
 //# sourceMappingURL=index.js.map
