@@ -149,3 +149,56 @@ const color_rect: ColoredRectangle = {
  */
 //Union types are used when a value can be more than a single type.
 //That would be when a value can be a string or a number
+
+/* THE UNION | (OR)*/
+
+function printStatusCode(code: string | number){
+    console.log(`Return status code ${code}`)
+    }
+printStatusCode(404)
+printStatusCode('404')
+/**
+ * From the above examples, we can then parse a string or a number as
+ * arguements for the  function printStatusCode( arguments)
+ * Notice We use backticks when we want to format our statements to the console and print variables & objects to the console
+ *  or to the UX
+ *  */
+
+
+//  TYPESCRIPT FUNCTIONS
+function getTime(): number{
+    return new Date().getTime();
+}
+//The Void return type
+function printHello(): void {
+    console.log('Hello World!!')
+}
+//Function Parameters
+function multiply(a:number, b: number){
+    return a * b;
+}
+let product = multiply(67,3)
+
+//Optional parameters
+function add(a: number, b: number, c?: number){//operator ? marks c as optional
+    return a + b + (c || 0)
+    
+}
+let sum = add(56, 45) //the third addend will be 0
+let sum_2 = add(56, 76, 45) //the third addend will be 45 since it is the third argument
+
+//Default Parameters
+/**Here the defaul value is initialized after type annotation */
+function pow(value: number, exponent: number = 10){
+    return value ** exponent
+}
+
+//Named Parameters
+function divide({dividend, divisor}: {dividend: number, divisor: number}){
+return dividend/divisor
+}
+let dividend = 78
+let divisor = 2
+// let myDiv = divide(dividend, divisor)
+//I think I will revisit this
+
