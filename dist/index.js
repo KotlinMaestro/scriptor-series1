@@ -9,5 +9,38 @@ let numbers = [1, 4, 6, "string"];
 let numbers2 = [23, 45, 21, 56];
 let names = ["Vince", "John", "Jennifer", "Michelangelo"];
 console.log(names.forEach(n => n.endsWith("e")));
+let myTuple;
+myTuple = [5, true, 'Johny'];
 let user = [3, 'Vince'];
+const readOnlyTuple = [56, true, "I am Vincent"];
+const graph = [55.6, 32.1];
+let car = {
+    type: "Mitsubishi",
+    model: "Mirage",
+    mileage: 78
+};
+console.log("A car of the type " + car.type + " and the model " + car.model + "flew past us at " + car.mileage.toString() + " miles per hour");
+var CardinalDirections;
+(function (CardinalDirections) {
+    CardinalDirections[CardinalDirections["North"] = 0] = "North";
+    CardinalDirections[CardinalDirections["East"] = 1] = "East";
+    CardinalDirections[CardinalDirections["West"] = 2] = "West";
+    CardinalDirections[CardinalDirections["South"] = 3] = "South";
+})(CardinalDirections || (CardinalDirections = {}));
+console.log(CardinalDirections.North);
+var StatusCodes;
+(function (StatusCodes) {
+    StatusCodes[StatusCodes["NotFound"] = 404] = "NotFound";
+    StatusCodes[StatusCodes["Success"] = 200] = "Success";
+    StatusCodes[StatusCodes["Accepted"] = 202] = "Accepted";
+    StatusCodes[StatusCodes["BadRequest"] = 400] = "BadRequest";
+})(StatusCodes || (StatusCodes = {}));
+console.log(StatusCodes.NotFound);
+var CardinalDirections1;
+(function (CardinalDirections1) {
+    CardinalDirections1["North"] = "North";
+    CardinalDirections1["East"] = "East";
+    CardinalDirections1["South"] = "South";
+    CardinalDirections1["West"] = "West";
+})(CardinalDirections1 || (CardinalDirections1 = {}));
 //# sourceMappingURL=index.js.map

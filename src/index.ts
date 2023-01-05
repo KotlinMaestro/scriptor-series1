@@ -41,3 +41,46 @@ const readOnlyTuple: readonly[number, boolean, string] = [56, true, "I am Vincen
 /* React.js used a tuple for state handling ie const [firstName, setFirstName] = useState(firstName)
 => From the above structure, we know that our list will have a string at the first index and
 a function as the second value*/
+/*Named Tuple */
+//they give context for the values at each index
+const graph: readonly[x: number, y: number] = [55.6, 32.1]
+
+/*Typescript Object Types */
+let car: {type: string, model: string, mileage:number} = {
+    type: "Mitsubishi",
+    model: "Mirage",
+    mileage: 78
+}
+
+console.log("A car of the type " + car.type + " and the model " + car.model + "flew past us at " + car.mileage.toString() +" miles per hour");
+
+/*Typescript Enums*/
+
+//an enum is a special class that represents a group of constants.
+// They can be string or numeric
+/*Numeric Enums*/
+enum CardinalDirections{
+    North,
+    East,
+    West,
+    South,
+}
+console.log(CardinalDirections.North)//will log 0
+
+enum StatusCodes {
+    NotFound = 404,
+    Success = 200,
+    Accepted = 202,
+    BadRequest = 400
+}
+console.log(StatusCodes.NotFound)
+
+/**
+ * String Enums
+ */
+enum CardinalDirections1 {
+    North = 'North',
+    East = 'East',
+    South = 'South',
+    West = "West"
+}
