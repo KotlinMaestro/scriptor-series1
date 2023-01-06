@@ -202,3 +202,19 @@ let divisor = 2
 // let myDiv = divide(dividend, divisor)
 //I think I will revisit this
 
+
+/**
+ * And today nothing better than some vim
+ *  a- insert text after cursor position
+ * A- insert text at the end of the line
+ * o- open new line below cursor
+ * O- Open new line above cursor 
+ * s- substitute a single character
+ * S- substitute entire line
+ * cc- change whole line * C- change text from the current cursor position
+ * J- join two lines
+ * 0- move cursor to the beginning of the current line.
+ * $- move cursor to the end of the current line.
+ * ctrl+f - scroll down entire page
+ * ctrl+b - scroll up entire page 
+ */
