@@ -64,4 +64,32 @@ const color_rect = {
     width: 54,
     color: "Red"
 };
+function printStatusCode(code) {
+    console.log(`Return status code ${code}`);
+}
+printStatusCode(404);
+printStatusCode('404');
+function getTime() {
+    return new Date().getTime();
+}
+function printHello() {
+    console.log('Hello World!!');
+}
+function multiply(a, b) {
+    return a * b;
+}
+let product = multiply(67, 3);
+function add(a, b, c) {
+    return a + b + (c || 0);
+}
+let sum = add(56, 45);
+let sum_2 = add(56, 76, 45);
+function pow(value, exponent = 10) {
+    return value ** exponent;
+}
+function divide({ dividend, divisor }) {
+    return dividend / divisor;
+}
+let dividend = 78;
+let divisor = 2;
 //# sourceMappingURL=index.js.map

@@ -217,11 +217,16 @@ let divisor = 2
  * $- move cursor to the end of the current line.
  * ctrl+f - scroll down entire page
  * ctrl+b - scroll up entire page 
- * :n- jump to the nth line
+ * ngg- jump to the nth line
  * :o- jump to the start of file
  * :$- jump to the end of the file
  * w- move cursor to the end of the next word
  * e- move cursor to the end of the current word 
  * b- move cursor to the beginning of the previous word
- * 
+ * yy- copies entire line
+ * dd- deletes entire line
+ * D- deletes entire line from cursor position
+ * dw- deletes word from cursor position
+ * u-undo changes
+ * p- pastes copied line after cursor position 
  */
